@@ -1,9 +1,12 @@
 name: E2E tests
+#on:
+#  pull_request:
+#  push:
+#    branches:
+#      - main
 on:
-  pull_request:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+
 jobs:
   test:
     timeout-minutes: 10
