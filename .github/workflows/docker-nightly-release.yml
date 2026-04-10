@@ -1,9 +1,11 @@
 name: Docker nightly release
 
+#on:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: '0 0 * * *'
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   check_date:
