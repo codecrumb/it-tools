@@ -3,6 +3,9 @@ name: Upstream Sync
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
 on:
   schedule:
     - cron: "0 0 * * *" # every day
